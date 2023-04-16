@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Your Design</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <nav class="menu">
+            <ul class="menu_item">
+                <li class="menu-item-head"><a href="index.html" class="menu_active">Главная</a></li>
+                <li class="menu-item-head"><a href="katalog.html" class="menu_link">Каталог</a></li>
+                <li class="menu-item-head"><a href="Poleznoe.html" class="menu_link">Полезное</a></li>
+                <li class="menu-item-head"><a href="Stoimost.html" class="menu_link">Стоимость</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="content">
+        <div class="text_info" >  
+                <h1 class="h1">YOUR DESIGN</h1>
+            <h2 class="h4">Делаем ваши помещения лучше с 2013 года</h2>
+            <h4 class="h2">Компания по разработке интерьеров квартир и загородных домов</h4> 
+            <p class="block_content">Основным трендом в дизайне интерьеров в 2021
+                году остаются перемены. Новое десятилетие
+                задает направление на свежие тенденции и
+                культурные сдвиги. Наш дом — место, куда
+                можно сбежать от шумного мира, пусть 
+                даже ненадолго. При этом каждый желает 
+                окунуться в утонченный комфорт и теплый уют 
+                Дизайн под ключ. Выполняем весь комплекс работ
+                по благоустройству и озеленению территории
+                и загородных участков.
+            </p> 
+                
+        </div> 
+        <div class="price">
+            <h3>Наши курсы:</h3>
+            <div class="block_price">
+               
+            <h4>Июль</h4>
+            <ul>
+                <li>“Мой первый дизайн” - 26.07.21</li>
+                <li>“Как искать клиентов и начать работать дизайнером интерьера” - 28.07.21</li>
+            </ul>
+            <h4>Август</h4>
+            <ul>
+                <li>“Мой первый дизайн” - 26.08.21</li>
+                <li>“Как искать клиентов и начать работать дизайнером интерьера” - 28.08.21</li>
+            </ul>
+            <h4>Сентябрь</h4>
+            <ul>
+                <li>“Мой первый дизайн” - 26.09.21</li>
+                <li>“Как искать клиентов и начать работать дизайнером интерьера” - 28.09.21</li>
+            </ul></div>
+           
+        </div> 
+    </div>
+    </main> 
+    <main>
+        <div id="map" class="map"  style="min-width: 100%; height: 500px;"></div>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+        </script>
+        <script>
+            ymaps.ready(init);
+            
+            function init() {
+                var map = new ymaps.Map('map', {
+                center: [59.93, 30.30],
+                zoom: 12,
+                controls: ['zoomControl'],
+                behaviors: ['drag']
+            });
+
+            var placemark = new ymaps.Placemark([59.96, 30.29], {
+                hintContent: "<b>Ул. Набережная д. 3, ТРК “Центр”",
+                balloonContent: [
+                    '<img class="yd" src ="img/your design.png">'
+                ].join('')
+            });
+
+            map.geoObjects.add(placemark);
+            } 
+        </script>
+    </main>
+    </div>
+    <footer>
+        <div class="footer">   
+            <p>Наш офис:
+            <br>Ул. Набережная д. 3,
+            <br>ТРК “Центр”, 4 этаж</p>
+            <p>+7 (921) 88-88-88-3</b>
+            <br>I: @rasteniya_interier
+            <br>Vk: vk/rasteniya_interier</p>     
+        </div> 
+    </footer>
+</body>
+</html>
