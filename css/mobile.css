@@ -1,5 +1,5 @@
 @media(max-width: 1174px){
-    
+
     .price {
         margin: auto 0;  
     }
@@ -8,7 +8,6 @@
 @media(max-width: 620px){
 
     .h2 , .h4 , .h1 , .block_conten{
-        width: 300px;
         margin-left: auto;   
     }
 
@@ -16,8 +15,55 @@
         margin-left: auto;  
     }
 
-    .poleznoe-tekst {
+}
+
+@media(max-width: 500px){
+    .price {
+        max-width: 70%;
+        margin: 20px auto;
+    }
+}
+
+@media(max-width: 400px) {
+    .h4 , .h1 {
+        font-size: 3vw;
+        margin-left: 50px;     
+    }
+
+    .h2 {
+        font-size: 2vw;
+        margin-left: 50px; 
+    }
+
+    .block_content {
+        width: 350px;
+        margin-left: 50px;  
+    }
+
+    .katalog-tekst {
         width: 300px;
-        
+       
+    }
+
+    .map {
+       width: 90%;
+    }
+
+    .tekst-stoimosti {
+        margin-left: auto;  
+    }
+
+    .poleznoe-tekst {
+        width: 100px;
+        margin-left: 0;          
+    }
+
+    footer {
+        width: 300px;
+    }
+
+    .footer {
+        margin: 20px;
+        font-size: 12px;
     }
 }
