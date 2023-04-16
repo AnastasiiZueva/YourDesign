@@ -1,0 +1,23 @@
+@media(max-width: 1174px){
+    
+    .price {
+        margin: auto 0;  
+    }
+}
+
+@media(max-width: 620px){
+
+    .h2 , .h4 , .h1 , .block_conten{
+        width: 300px;
+        margin-left: auto;   
+    }
+
+    .tekst-stoimosti {
+        margin-left: auto;  
+    }
+
+    .poleznoe-tekst {
+        width: 300px;
+        
+    }
+}
