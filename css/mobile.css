@@ -6,7 +6,10 @@
 }
 
 @media(max-width: 620px){
-
+    .main-title-info{
+        margin: 0 15%;
+    }
+    
     .h2 , .h4 , .h1 , .block_conten{
         margin-left: auto;   
     }
