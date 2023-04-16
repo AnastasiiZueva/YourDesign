@@ -6,16 +6,24 @@
 }
 
 @media(max-width: 620px){
-    .main-title-info{
-        margin: 0 15%;
-    }
     
+    .main-title-info {
+        margin: 0;
+    }
     .h2 , .h4 , .h1 , .block_conten{
         margin-left: auto;   
     }
 
     .tekst-stoimosti {
-        margin-left: auto;  
+        margin: 10%;  
+    }
+
+    .katalog-tekst {
+        margin: 50px;
+    }
+    
+    .footer {
+        margin: 32px 60px ;
     }
 
 }
